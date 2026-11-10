@@ -9,6 +9,7 @@ public class App {
             new Persona("Diego", 25, "M"),
             new Persona("Ana", 35, "F")
         );
+        searchPersonas(personas);
     }
 
     // 1. BUSQUE UNA PERSONA con nombre "Maria"
@@ -38,7 +39,7 @@ public class App {
         }
 
         // 3. Buscar "Ana" y obtener su posición
-        int posAna = busqueda.FindPosByNamePos("Ana");
+        int posAna = busqueda.FindPosByName("Ana");
         if (posAna != -1) {
             System.out.println("Ana encontrada en la posición: " + posAna);
         } else {
